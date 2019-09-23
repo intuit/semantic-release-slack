@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/@intuit/semantic-release-slack.svg)](https://www.npmjs.com/package/@intuit/semantic-release-slack)
 [![CircleCI](https://circleci.com/gh/intuit/semantic-release-slack/tree/master.svg?style=shield)](https://circleci.com/gh/intuit/semantic-release-slack/tree/master)
+[![Known Vulnerabilities](https://snyk.io//test/github/intuit/semantic-release-slack/badge.svg?targetFile=package.json)](https://snyk.io//test/github/intuit/semantic-release-slack?targetFile=package.json)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=shield)](https://github.com/prettier/prettier)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
