@@ -1,0 +1,47 @@
+{
+  "name": "@intuit/semantic-release-slack",
+  "description": "Post slack notifications to a webhook on success or failure of a semantic-release job",
+  "version": "1.2.2",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "UI Infra",
+  "repository": {
+    "url": "git@github.com:intuit/semantic-release-slack.git"
+  },
+  "scripts": {
+    "lint": "yarn eslint *.js",
+    "test": "jest tests"
+  },
+  "dependencies": {
+    "@atomist/slack-messages": "1.1.1",
+    "@semantic-release/error": "2.2.0",
+    "aggregate-error": "3.0.0",
+    "debug": "4.1.1",
+    "node-emoji": "1.10.0",
+    "node-fetch": "2.6.0",
+    "read-pkg-up": "5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "8.2.0",
+    "@semantic-release/git": "7.0.16",
+    "@semantic-release/github": "5.4.3",
+    "@semantic-release/npm": "5.1.15",
+    "commitlint": "8.2.0",
+    "eslint": "6.4.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.17.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.14.3",
+    "husky": "3.0.5",
+    "jest": "24.9.0",
+    "lint-staged": "9.3.0",
+    "prettier": "1.17.1",
+    "semantic-release": "15.13.24"
+  }
+}

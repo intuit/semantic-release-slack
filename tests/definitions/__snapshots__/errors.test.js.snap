@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`errors errors matches snapshot of errors 1`] = `
+Object {
+  "EMISSINGSLACKWEBHOOKURL": [Function],
+}
+`;
+
+exports[`errors errors matches snapshot of errors 2`] = `
+Object {
+  "details": "A slack webhook URL is required to post updates to a channel. Ensure you have the environment variable SLACK_WEBHOOK_URL set appropriately and try again",
+  "message": "Missing Slack Webhook Url",
+}
+`;

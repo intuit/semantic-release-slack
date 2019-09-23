@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`payload payload matches snapshot of errors 1`] = `
+Object {
+  "body": "{\\"text\\":\\"message\\",\\"mrkdwn\\":true}",
+  "headers": Object {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;

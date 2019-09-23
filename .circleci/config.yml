@@ -1,0 +1,123 @@
+# Current Node Version
+defaults: &defaults
+  docker:
+    - image: circleci/node:8-browsers
+defaults-browsers: &defaults-browsers
+    docker:
+      - image: circleci/node:8-browsers
+# Next Node Version
+next: &next
+  docker:
+    - image: circleci/node:10-browsers
+next-browsers: &next-browsers
+  docker:
+    - image: circleci/node:10-browsers
+cache-defaults: &cache-defaults
+  keys:
+    - -{{ checksum "yarn.lock" }}
+
+aliases:
+  - &jest
+    name: Jest Suite
+    command: yarn test --ci
+  - &eslint-js
+    name: JavaScript Linter
+    command: yarn eslint **/*.js --format junit -o coverage/junit/js-lint-results.xml
+  - &upload-to-codecov
+    name: Send CodeCov Results
+    command: bash <(curl -s https://codecov.com/bash) -t $CODECOV_KEY
+  - &yarn
+    name: Installing Dependencies
+    command: yarn install --non-interactive --frozen-lockfile --cache-folder ~/.cache/yarn
+  - &cache-modules
+    key: -{{ checksum "yarn.lock" }}
+    paths:
+      - ~/.cache/yarn
+      - node_modules
+      # Necessary so that linting is faster on CI
+      - .eslintcache
+
+version: 2
+debug: true
+jobs:
+  # Test the current node version
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache-defaults
+      - run: *yarn
+      - save_cache: *cache-modules
+
+  # Test the next node version
+  build-next:
+    <<: *next
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache-defaults
+      - run: *yarn
+      - save_cache: *cache-modules
+
+  # Test the current node version
+  tests-unit:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache-defaults
+      - run: *yarn
+      - run: *jest
+      - run: *eslint-js
+      # Note: this hasn't changed. Don't add this twice!
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
+  # Test the next node version
+  tests-unit-next:
+    <<: *next
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache-defaults
+      - run: *yarn
+      - run: *jest
+      - run: *eslint-js
+      # Note: this hasn't changed. Don't add this twice!
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
+
+  deploy:
+    <<: *defaults
+    steps:
+        - checkout
+        - run: *yarn
+        - restore_cache:
+            <<: *cache-defaults
+        - run:
+            name: Create Release
+            command: yarn semantic-release
+
+workflows:
+  version: 2
+  build_and_tests:
+    jobs:
+      - build
+      - build-next
+      - tests-unit:
+          requires:
+            - build
+      - tests-unit-next:
+          requires:
+            - build-next
+      - deploy:
+          requires:
+            - tests-unit
+          filters:
+            branches:
+                only: master
+
