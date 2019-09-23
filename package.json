@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.md",
-  "author": "UI Infra",
+  "author": "David Aghassi",
   "repository": {
     "url": "git@github.com:intuit/semantic-release-slack.git"
   },
