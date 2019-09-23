@@ -95,9 +95,9 @@ jobs:
     <<: *defaults
     steps:
         - checkout
-        - run: *yarn
         - restore_cache:
             <<: *cache-defaults
+        - run: *yarn
         - run:
             name: Create Release
             command: yarn semantic-release
