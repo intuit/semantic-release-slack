@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=8"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.md",
   "author": "David Aghassi",
