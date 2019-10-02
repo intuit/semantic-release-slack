@@ -550,10 +550,10 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@5.4.4":
-  version "5.4.4"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.4.4.tgz#17db97716817a7fa5543f62adb2729849110688a"
-  integrity sha512-+KheVeE3pPdywdIByQ4gHLIyptqhzGmWTiHdRwFURGKvlnK7DB0pceZKEMdYVOdZZUvVbzg5mKY5EuFZ5cFgUQ==
+"@semantic-release/github@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.5.0.tgz#2a9ae28d5980b0282cd646f19fb062128c8862f0"
+  integrity sha512-Rg7cZr1sgUmo5iuzhGOhFdAw6NWGH7I9RbZA1wySO4M+enFkBxtA3Joy+RQKrzbrSAPwEJyP6ZixXXB1qfKAtg==
   dependencies:
     "@octokit/rest" "^16.27.0"
     "@semantic-release/error" "^2.2.0"
