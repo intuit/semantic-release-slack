@@ -33,7 +33,7 @@
     "@semantic-release/github": "5.5.4",
     "@semantic-release/npm": "5.2.0",
     "commitlint": "8.2.0",
-    "eslint": "6.5.1",
+    "eslint": "6.6.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "6.4.0",
     "eslint-plugin-import": "2.18.2",
