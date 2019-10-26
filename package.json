@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "8.2.0",
-    "@semantic-release/git": "7.0.16",
-    "@semantic-release/github": "5.5.4",
+    "@semantic-release/git": "7.0.17",
+    "@semantic-release/github": "5.5.5",
     "@semantic-release/npm": "5.3.1",
     "commitlint": "8.2.0",
     "eslint": "6.6.0",
@@ -45,6 +45,6 @@
     "jest": "24.9.0",
     "lint-staged": "9.4.2",
     "prettier": "1.17.1",
-    "semantic-release": "15.13.27"
+    "semantic-release": "15.13.28"
   }
 }
