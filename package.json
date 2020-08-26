@@ -30,8 +30,8 @@
   "devDependencies": {
     "@commitlint/config-conventional": "8.3.4",
     "@semantic-release/git": "7.0.18",
-    "@semantic-release/github": "5.5.8",
-    "@semantic-release/npm": "5.3.5",
+    "@semantic-release/github": "7.0.7",
+    "@semantic-release/npm": "7.0.5",
     "commitlint": "8.3.4",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
