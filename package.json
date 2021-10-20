@@ -1,7 +1,7 @@
 {
   "name": "@intuit/semantic-release-slack",
   "description": "Post slack notifications to a webhook on success or failure of a semantic-release job",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "node": ">=8"
   },
