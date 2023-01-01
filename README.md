@@ -49,3 +49,4 @@ because the plugin won't know where to post to.
 | `skipCommit`       | `String`   | `undefined`                   | `"skipCommit": "^fix\\(deps\\):"`    | Skips notifying when `regex` matches at least one commit in the release                                                    |
 | `semverFilter`     | `String[]` | `["major", "minor", "patch"]` | `"semverFilter": ["major", "minor"]` | Skips releases that do not match one of the configured types                                                               |
 | `fullReleaseNotes` | `Boolean`  | `false`                       | `"fullReleaseNotes": true`           | Provides the full release notes in slack instead of a link to the release notes                                            |
+test
