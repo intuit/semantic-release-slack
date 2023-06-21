@@ -1,5 +1,5 @@
 {
-  "name": "@intuit/semantic-release-slack",
+  "name": "@egavard/semantic-release-slack",
   "description": "Post slack notifications to a webhook on success or failure of a semantic-release job",
   "version": "1.0.9",
   "engines": {
@@ -12,7 +12,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "author": "David Aghassi",
   "repository": {
-    "url": "git@github.com:intuit/semantic-release-slack.git"
+    "url": "git@github.com:egavard/semantic-release-slack.git"
   },
   "scripts": {
     "lint": "yarn eslint *.js",

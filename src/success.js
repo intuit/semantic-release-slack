@@ -77,6 +77,10 @@ module.exports = async (pluginConfig, context) => {
       githubReleaseNotesUrl = fullReleaseNotes
         ? sanitizeMarkdown(release.notes)
         : `${emoji.get('spiral_note_pad')} Release Notes: ${release.url}`;
+    } else if (release.pluginName.includes('gitlab')) {
+      githubReleaseNotesUrl = fullReleaseNotes
+        ? sanitizeMarkdown(nextRelease.notes)
+        : `${emoji.get('spiral_note_pad')} Release Notes: ${release.url}`;
     }
   });
 
