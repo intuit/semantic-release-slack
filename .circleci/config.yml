@@ -1,17 +1,17 @@
 # Current Node Version
 defaults: &defaults
   docker:
-    - image: circleci/node:8-browsers
+    - image: circleci/node:17-browsers
 defaults-browsers: &defaults-browsers
     docker:
-      - image: circleci/node:8-browsers
+      - image: circleci/node:17-browsers
 # Next Node Version
 next: &next
   docker:
-    - image: circleci/node:10-browsers
+    - image: circleci/node:17-browsers
 next-browsers: &next-browsers
   docker:
-    - image: circleci/node:10-browsers
+    - image: circleci/node:17-browsers
 cache-defaults: &cache-defaults
   keys:
     - -{{ checksum "yarn.lock" }}
