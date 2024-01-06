@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atomist/slack-messages@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@atomist/slack-messages/-/slack-messages-1.1.1.tgz#9de42932e89065fb4fe4842978ca2d1ed3424cea"
-  integrity sha512-m2OzlTDbhvzK4hgswH9Lx0cdpq1AntXu53Klz5RGkFfuoDvKsnlU7tmtVfNWtUiP0zZbGtrb/BZYH7aB6TRnMA==
+"@atomist/slack-messages@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@atomist/slack-messages/-/slack-messages-1.2.2.tgz#782d31936a0363e4458272bcc8fbe4f7651292ee"
+  integrity sha512-K1kQv1BZVtMXQqdpNZt9Pgh85KwamsWX9gYyq1xG4cpyb+EacfMiNfumrju16piFXanCUrCR0P1DowPjV2qV/A==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
