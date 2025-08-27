@@ -19,7 +19,7 @@
     "test": "jest tests"
   },
   "dependencies": {
-    "@atomist/slack-messages": "1.1.1",
+    "@atomist/slack-messages": "1.2.2",
     "@semantic-release/error": "2.2.0",
     "aggregate-error": "3.0.1",
     "debug": "4.1.1",
