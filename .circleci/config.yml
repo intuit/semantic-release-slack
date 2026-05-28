@@ -8,7 +8,7 @@ defaults-browsers: &defaults-browsers
 # Next Node Version
 next: &next
   docker:
-    - image: circleci/node:10-browsers
+    - image: circleci/node:17-browsers
 next-browsers: &next-browsers
   docker:
     - image: circleci/node:10-browsers
